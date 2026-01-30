@@ -5,20 +5,21 @@
 class Bauer < Formula
   desc "Automate BAU tasks with ease"
   homepage "https://github.com/muhammadbassiony/Bauer"
-  version "1.1.0"
+  version "1.2.0"
+  license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/muhammadbassiony/Bauer/releases/download/v1.1.0/Bauer_Darwin_x86_64.tar.gz"
-      sha256 "802640e50d4a7ad182a8f912c862f71f98c296579fbd7041b5fd20029f4fa8a2"
+      url "https://github.com/muhammadbassiony/Bauer/releases/download/v1.2.0/Bauer_Darwin_x86_64.tar.gz"
+      sha256 "f07ca70c6617e0aabed5dfc10cb01e898a2fc5dcc7258451530d159cb7bdefc8"
 
       def install
         bin.install "Bauer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/muhammadbassiony/Bauer/releases/download/v1.1.0/Bauer_Darwin_arm64.tar.gz"
-      sha256 "7f275098f1d06bff0d0d8ac9d8a25752a7a9e8219fc460f046505ea60b76aa4d"
+      url "https://github.com/muhammadbassiony/Bauer/releases/download/v1.2.0/Bauer_Darwin_arm64.tar.gz"
+      sha256 "55b8fb3c61cd65fb7264955f846d7790938bcd1d82507d0f7151aec9ba59827e"
 
       def install
         bin.install "Bauer"
@@ -28,15 +29,15 @@ class Bauer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/muhammadbassiony/Bauer/releases/download/v1.1.0/Bauer_Linux_x86_64.tar.gz"
-      sha256 "50e4bebdec4a8471f189975c35e9994c9a8a32c03c86aa51cbbcd7b65d3b0eca"
+      url "https://github.com/muhammadbassiony/Bauer/releases/download/v1.2.0/Bauer_Linux_x86_64.tar.gz"
+      sha256 "c6bb71211ffecb8571f4b9e1504a9d6fdb3fb288c9bbe15e9ebc9a4e1348d01c"
       def install
         bin.install "Bauer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/muhammadbassiony/Bauer/releases/download/v1.1.0/Bauer_Linux_arm64.tar.gz"
-      sha256 "6e507a99b6ac07686e1733056f9a41a97dab2da5703dbfe03de6beed65df82be"
+      url "https://github.com/muhammadbassiony/Bauer/releases/download/v1.2.0/Bauer_Linux_arm64.tar.gz"
+      sha256 "5e3a47e004dfbf75a4237e582b7bae3fcbc30dc62e473f782f9a71131495660e"
       def install
         bin.install "Bauer"
       end
